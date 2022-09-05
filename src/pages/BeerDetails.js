@@ -23,7 +23,7 @@ function BeerDetails() {
     return (
         <div className="AllBeersList">
             <NavBar />
-            <Link to="/beers">🔙</Link>
+            <Link to="/">🔙</Link>
           <h1>{beer.name}</h1>
              <img src={beer.image_url} alt="beer" className='beerSize'></img>
              <h2>{beer.tagline}</h2>
