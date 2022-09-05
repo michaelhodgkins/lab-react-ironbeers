@@ -22,22 +22,15 @@ function AllBeers() {
         <NavBar />
         <Link to="/">🔙</Link>
         <h1>All Beers</h1>
-        <hr>
-        </hr>
         {beers.map((beer) => {
             return (
                 <div key={beer._id}>
                     <img src={beer.image_url} alt="beer" className='beerSize'></img>
                     <br>
                     </br>
-                    <h3>{beer.name}</h3>
                     <p>Tagline: {beer.tagline}</p>
                     <p>Created By: {beer.contributed_by}</p>
-                    <Link to="/beers/:beerId"> See Details</Link>
-                    <hr>
-                    </hr>>
-                    <br>
-                    </br>
+                    <Link to={beer._id}>Details</Link>
                 </div>
             )
         })}

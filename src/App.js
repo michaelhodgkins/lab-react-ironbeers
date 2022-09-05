@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import axios from 'axios';
 import HomePage from './pages/HomePage';
 import AllBeers from './pages/AllBeers';
 import NewBeer from './pages/NewBeer';
