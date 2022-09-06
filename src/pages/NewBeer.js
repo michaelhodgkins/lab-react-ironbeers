@@ -16,7 +16,7 @@ function NewBeer() {
 
         const handleSubmit = (event) => {
             event.preventDefault();
-            axios.post(`https://ih-beers-api2.herokuapp.com/beers`, {name, tagline, description, first, attenuation, contributed})
+            axios.post(`https://ih-beers-api2.herokuapp.com/beers/new`, {name, tagline, description, first, attenuation, contributed})
                 .then(() => {
                     setName("");
                     setTagline("");
